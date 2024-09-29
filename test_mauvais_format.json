@@ -1,0 +1,18 @@
+[
+    {
+        "temps": "10:00",
+        "cardio": "120",
+        "latitude": "45.7640",
+        "longitude": "4.8357",
+        "altitude": "200",
+        "activiteId": 1
+    },
+    {
+        "temps": "12:00",
+        "cardio": "130",
+        "latitude": "45.7640",
+        "longitude": "4.8357",
+        "altitude": "210",
+        "activiteId": 2
+    }
+]

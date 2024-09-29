@@ -1,0 +1,250 @@
+/* RESET AND BASE STYLES */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-image: url('/static/img/image3.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    color: #183c65;
+}
+
+h1 {
+    font-size: 2em;
+    text-transform: uppercase;
+    color: #ff6b35; /* Vibrant sporty orange */
+}
+
+h2 {
+    font-size: 1.4em;
+}
+
+h3 {
+    font-size: 1.2em;
+}
+
+/* HEADER STYLES */
+header {
+    background-color: #183c65;
+    padding: 10px 0;
+    text-align: center;
+    border-bottom: 2px solid #ff6b35;
+}
+
+header h1 {
+    color: white;
+    letter-spacing: 2px;
+}
+
+.site-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 180px;
+}
+
+.logo {
+    width: 300px;
+    height: 300px;
+}
+
+/* FOOTER STYLES */
+footer {
+    background-color: #183c65;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border-top: 2px solid #ff6b35;
+    font-size: 0.9rem;
+    margin-top: 40px;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+}
+
+footer a {
+    color: #ff6b35;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    color: #e0562c;
+}
+
+/* MAIN AND FORM STYLING */
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 60vh;
+    margin-top: 40px;
+    padding-bottom: 150px;
+}
+
+form {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 0 auto;
+    border: 2px solid #e0e0e0;
+}
+
+label {
+    font-size: 1rem;
+    color: #183c65;
+    font-weight: 500;
+}
+
+input, select {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0 20px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #f9f9f9;
+}
+
+input:focus {
+    border-color: #ff6b35;
+    box-shadow: 0px 0px 5px rgba(255, 107, 53, 0.5);
+}
+
+input:valid {
+    border-color: #4caf50;
+}
+
+button {
+    padding: 12px;
+    background-color: #ff6b35;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 10px 0;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #e0562c;
+}
+
+.return-button-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.disconnect-link {
+    color: #ff6b35;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.disconnect-link:hover {
+    text-decoration: underline;
+}
+
+/* SIDEBAR AND CONTENT STYLES */
+#sidenav {
+    background-color: #ff6b35;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+}
+
+#main-div {
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+#main-div, .action-buttons {
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* TABLE STYLES */
+.table-wrapper {
+    width: 100%;
+    overflow-x: auto; /* Permet le défilement horizontal */
+}
+
+.activity-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.activity-table th, .activity-table td {
+    padding: 10px;
+    border: 2px solid #ddd;
+    text-align: center;
+}
+
+.activity-table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+.btn-danger {
+    background-color: #e74c3c;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-danger:hover {
+    background-color: #c0392b;
+}
+
+/* ARTICLE STYLES */
+article {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    max-width: 500px;
+    margin: 0 auto;
+    transition: transform 0.3s ease;
+}
+
+article:hover {
+    transform: scale(1.02);
+}
+
+/* RESPONSIVE DESIGN */
+@media screen and (max-width: 768px) {
+    main {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    #main-div {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    article {
+        width: 90%;
+    }
+}
